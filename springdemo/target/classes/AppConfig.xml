@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="VehicleHelper" class="com.murtaza.springdemo.VehicleHelper">
+		<constructor-arg>
+			<ref bean="Car" />
+		</constructor-arg>
+	</bean>
+
+<bean id="Car" class="com.murtaza.springdemo.Car" />
+<bean id="Bike" class="com.murtaza.springdemo.Bike" />
+
+</beans>
